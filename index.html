@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+
+<body class="bg-gray-100">
+
+   <header class="flex bg-white shadow justify-between items-center px-20 py-4">
+      <div class="container mx-auto flex">
+        <div class="flex items-center space-x-2">
+          <img src="bag.svg" class="h-12 w-12 mr-0" alt=""/>
+          <span class="text-blue-300 font-bold text-3xl">Brand</span>
+        </div>
+      </div>
+
+      <!--- search bar --->
+
+      <div class="hidden md:flex flex mx-[100px] h-full w-full py-[0px] items-center border border-solid border-2 border-blue-600 justify-center rounded-r-xl rounded-l-lg bg-transparent">
+        <div class="flex w-96 bg-white">
+          <input type="Search" name="search" id="search" placeholder="Search" 
+          class="w-full border bg-white px-4 py-1 bg-transparent focus:outline-none overflow-hidden border-none appearance-none">
+        </div>
+        <select class="border border-l-blue-500 px-2 py-1 items-center focus:outline-none border-transparent">
+          <option>All Category</option>
+          <option>Automobiles</option>
+          <option>Clothes and wear</option>
+          </select>
+          <button class="bg-blue-500 text-white px-6 py-1.5 rounded-r-lg">
+            Search
+          </button>
+      </div>
+       
+    <!--- right section --->
+
+       <div class="hidden md:flex flex items-center text-gray-600 space-x-6">
+       <a href="#" class="flex flex-col items-center hover:text-blue-500">
+           <img src="profile.png" alt="Profile" class="w-7 h-7"/>
+           <span class="text-sm">Profile</span>
+         </a>
+
+         <a href="#" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+           <img src="message.png" alt="Profile" class="w-7 h-7"/>
+           <span class="text-sm">Message</span>
+         </a>
+
+         <a href="#" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+           <img src="heart.png" alt="Profile" class="w-6 h-6"/>
+           <span class="text-sm mt-1">Orders</span>
+         </a>
+
+         <a href="#" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+           <img src="cart.png" alt="Profile" class="w-7 h-7"/>
+           <span class="text-sm">Cart</span>
+         </a>
+
+       </div>
+    </header>
+
+   <!--- secondary navbar with links and shipping --->
+    
+    <div class="hidden md:flex bg-white shadow border-t">
+    <div class="container mx-auto flex justify-between items-center py-2 px-7
+     border-1">
+      
+  <nav class="flex items-center space-x-6 text-black-600 pl-6 font-medium">
+    <button class="text-black-600 focus:outline-none">
+      <img src="menu.png" class="w-7 h-7" />
+    </button>
+      <a href="#" class="hover:text-blue-600">All category</a>
+      <a href="#" class="hover:text-blue-600">Hot offers</a>
+      <a href="#" class="hover:text-blue-600">Gift boxes</a>
+      <a href="#" class="hover:text-blue-600">Projects</a>
+      <a href="#" class="hover:text-blue-600">Menu item</a>
+      <a href="#" class="hover:text-blue-600 space-x-1">Help</a>
+      <img src="down.png" class="w-3 h-3" />
+     </nav>
+
+     <!--- Language currency shipping option --->
+    
+     <div class="flex items-center space-x-4 px-5">
+
+       <div class="relative flex items-center space-x-3 font-medium text-black-600">
+         <span>
+           English, USD
+         </span>
+         <img src="down.png" class="w-3 h-3 space-x-2" />
+       </div>
+
+       <div class="flex items-center space-x-2 font-medium text-black-600">
+         <span>Ship to</span>
+         <img src="flag.png" alt="Country Flag" class="ml-2 rounded w-6 h-4">
+         <img src="down.png" class="w-3 h-3" />
+       </div>
+     </div>
+    </div>
+   </div>
+                
+
+
+  <!--- main content area --->    
+  
+  <main class="container mx-auto bg-white rounded-md border my-6 px-4 max-w-[1170px] max-h-[400px]">
+    <div class="flex flex-col md:flex-row">
+      
+     <!--- left side section --->
+
+    <div class="w-full md:w-1/4 md:w-1/5 px-2 p-4">
+
+      <ul class="space-y-4">
+       <li class="font-semibold bg-blue-100 p-2 rounded">Automobiles</li>
+       <li class="px-2 text-gray-700">Clothes and Wear</li>
+       <li class="px-2 text-gray-700">Home interiors</li>
+       <li class="px-2 text-gray-700">Computer and tech</li>
+       <li class="px-2 text-gray-700">Tools, equipment</li>
+       <li class="px-2 text-gray-700">Sports and outdoor</li>
+       <li class="px-2 text-gray-700">Animals and pets</li>
+       <li class="px-2 text-gray-700">Machinery tools</li>
+       <li class="px-2 text-gray-700">More category</li>
+     </ul>
+    </div>
+
+  <!--- center content section --->
+
+   <div class="flex-1 p-2">
+     <div class="relative p-0 py-8 rounded-lg flex flex-col md:flex-row
+     items-center md:items-start">
+     <img src="banner.png" alt="banner" class="w-full md:w-[700px] h-[200px] md:h-[365px] mb-5 mt-[-25px] md:mb-0 md:mr-4 object-cover" />
+      <div class="absolute text-center mx-[40px] mt-[20px] md:text-left">
+      <h2 class="text-3xl text-gray-800">
+        Latest trending
+      </h2>
+      <p class="text-3xl font-bold text-black-600 mb-4">
+        Electronic items
+      </p>
+      <button class="px-4 py-2 font-medium bg-white text-black-700 rounded-md">
+      Learn more</button>
+      </div>
+     </div>
+   </div>
+
+  <!--- Right boxes section --->
+
+   <div class="w-full md:w-1/4 lg:w-1/5 p-4 space-y-2 m-0">
+
+     <div class="bg-blue-50 py-5 px-2 rounded-lg flex flex-col">
+      <div class="flex items space-x-2 mb-2">
+        <div class="bg-gray-300 bg-transparent px-1 p-2">
+      <img src="user.png" class="w-9 h-9 text-gray-300"/>
+    </div>
+       <p class="text-black-300 font-medium">Hi, user<br>
+        let's get startrd</p>
+     </div>
+    <button class="mt-2 px-14 py-0.5 bg-blue-500 text-normal text-white rounded-md">
+         Join now
+       </button>
+
+       <button class="mt-2 px-16 py-0.5 bg-white text-blue-700 rounded-md">
+         Log in
+       </button>
+     </div>
+     <div class="bg-orange-400 px-4 text-white py-5 leading-none rounded-lg ">
+       <p class="text-white-300">
+         Get US $10 off<br> with a new<br> supplier
+       </p>
+     </div>
+     <div class="bg-teal-400 px-4 text-white leading-none py-5 rounded-lg">
+       <p class="text-white-300">Send quotes with<br> supplier<br> preference</p>
+      </div>
+     </div>
+    </div>
+
+
+
+ <!--- deals section start --->
+  
+  <div class="container mx-auto w-full my-1" style="margin-left: -15px;">
+  <div class="w-full lg:w-[1168px] sm:w-[100%] justify-center sm:px-2 mx-auto flex flex-col lg:flex-row border border-gray-300 rounded bg-white overflow-hidden">
+
+  <div class="flex-shrink-0 pr-4 lg:pr-12 lg:border-r border-gray-300 p-4 lg:w-auto">
+  <div class="mb-4 min-w-[210px] text-center lg:text-left ">
+      <h2 class="text-xl font-bold text-gray-800">Deals and offers</h2>
+      <p class="text-gray-500">Hygiene equipments</p>
+  </div>
+
+
+  <div class="flex space-x-1.5 mt-1 justify-center lg:justify-start">
+
+  <div class="bg-gray-600 text-white px-[8px] py-2 rounded leading-none text-center">
+      <span class="text-md font-semibold mt-1">04</span>
+      <p class="text-xs text-gray-300 -mb-0.5">Days</p>
+    </div>
+
+  <div class="bg-gray-600 text-white px-[8px] py-2 rounded leading-none 
+  text-center">
+      <span class="text-md font-semibold mt-1">13</span>
+      <p class="text-xs text-gray-300 -mb-0.5">Hour</p>
+    </div>
+
+  <div class="bg-gray-600 text-white px-[10.5px] py-2 rounded leading-none
+   text-center">
+      <span class="text-md font-semibold mt-1">34</span>
+      <p class="text-xs text-gray-300 -mb-0.5">Min</p>
+    </div>
+
+  <div class="bg-gray-600 text-white px-[11.5px] py-2 rounded leading-none text-center">
+      <span class="text-md font-semibold mt-1">56</span>
+      <p class="text-xs text-gray-300 -mb-0.5">Sec</p>
+    </div>  
+   </div>
+  </div>
+
+
+ <!--- Products row --->
+
+ 
+ <div class="flex flex-wrap flex-grow justify-center lg:justify-start divide-x divide-gray-300">
+
+  <!--- product 1 --->
+
+   <div class="flex flex-col items-center p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 text-center">
+     <img src="8.png" class="mb-2 h-21 object-contain">
+     <h3 class="text-md font-medium text-gray-700">Smart watches</h3>
+     <span class="text-[red] bg-red-100 px-3 py-1 rounded-full text-sm font-semibold mt-1">-25%</span>
+   </div>
+
+   <div class="flex flex-col items-center p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 text-center">
+     <img src="7.png" class="mb-2 h-21 object-contain">
+     <h3 class="text-md font-medium text-gray-700">Laptops</h3>
+     <span class="text-[red] bg-red-100 px-3 py-1 rounded-full text-sm font-semibold mt-1">-15%</span>
+   </div>
+
+   <div class="flex flex-col items-center p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 text-center">
+     <img src="6.png" class="mb-2 h-21 object-contain">
+     <h3 class="text-md font-medium text-gray-700">GoPro Cameras</h3>
+     <span class="text-[red] bg-red-100 px-3 py-1 rounded-full text-sm font-semibold mt-1">-40%</span>
+   </div>
+
+   <div class="flex flex-col items-center p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 text-center">
+     <img src="5.png" class="mb-2 h-21 object-contain">
+     <h3 class="text-md font-medium text-gray-700">Headphones</h3>
+     <span class="text-[red] bg-red-100 px-3 py-1 rounded-full text-sm font-semibold mt-1">-25%</span>
+   </div>
+
+   <div class="flex flex-col items-center p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 text-center">
+     <img src="3.png" class="mb-2 h-21 object-contain">
+     <h3 class="text-md font-medium text-gray-700">Canon Cameras</h3>
+     <span class="text-[red] bg-red-100 px-3 py-1 rounded-full text-sm font-semibold mt-1">-25%</span>
+   </div>
+
+ </div>
+ </div>
+</div>
+
+
+
+<!--- deals section end --->
+
+
+<div class="bg-gray-100">
+
+<!--- Home and outdoor section start --->
+
+<div class="container md:w-[1170px] max-w-[1170px] bg-white mt-6 border rounded-lg overflow-hidden mx-auto" style="margin-left: -15px;">
+
+  <div class="flex flex-col md:flex-row">
+    
+    <div class="relative w-full md:w-1/4 h-[200px] md:h-[270px] bg-cover bg-center" 
+    style="background-image: url('left.png');">
+      
+      <div class="absolute flex flex-col items-start h-full w-full text-black p-4">
+      <h2 class="text-lg sm:text-xl font-bold leading-6 ml-1 mt-2 md:leading-[25px]">
+        Home and<br> outdoor</h2>
+      <a href="#" class="mt-5 ml-1 bg-white text-black px-4 py-1.5 rounded font-medium text-medium sm:text-md shadow">Source now</a>
+      </div>
+    </div>
+
+
+
+ <!--- right side section --->
+
+<div class="w-full md:w-3/4 grid grid-rows-2 border divide-y divide-gray-300">
+  
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 divide-x divide-gray-300 items-stretch">
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Soft chairs</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="1.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Soft lamp</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="9.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Tech gadget</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 29</p>
+  <img src="13.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Soft product</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="2.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+</div>
+
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 divide-x divide-gray-300 items-stretch">
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Kitchen mixer</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 39</p>
+  <img src="12.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Blenders</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 29</p>
+  <img src="11.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Home appliance</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 79</p>
+  <img src="10.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">House plant</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="4.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!--- home and outdoor section end --->
+
+
+
+<!--- Consumer electronic section start --->
+
+<div class="container md:w-[1170px] max-w-[1170px] bg-white mt-6 border rounded-lg overflow-hidden mx-auto" style="margin-left: -15px;">
+
+  <div class="flex flex-col md:flex-row">
+    
+    <div class="relative w-full md:w-1/4 h-[200px] md:h-[270px] bg-cover bg-center" 
+    style="background-image: url('left1.png');">
+      
+      <div class="absolute flex flex-col items-start h-full w-full text-black p-4">
+      <h2 class="text-lg sm:text-xl font-bold leading-6 ml-1 mt-2 md:leading-[25px]">
+        Consumer<br> electronic and <br> gadgets</h2>
+      <a href="#" class="mt-5 ml-1 bg-white text-black px-4 py-1.5 rounded font-medium text-medium sm:text-md shadow">Source now</a>
+      </div>
+    </div>
+
+
+<div class="w-full md:w-3/4 grid grid-rows-2 border divide-y divide-gray-300">
+  
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 divide-x divide-gray-300 items-stretch">
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Smart watches</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="8.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">cameras</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="14.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Headphones</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="15.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Smart mugs</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="16.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+</div>
+
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 divide-x divide-gray-300 items-stretch">
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Gaming </p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="17.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Laptops & PC</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="7.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Latest tablets</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="18.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+
+  <div class="flex flex-col justify-between p-3 md:p-4 h-full relative">
+   <p class="text-xs sm:text-sm md:text-md font-semibold absolute top-2 md:top-5 left-2 sm:left-4">Smartphones</p>
+   <div class="flex items-center justify-between mt-6 md:mt-4">
+   <p class="text-xs text-gray-700 mt-2 md:-mt-6 leading-4">From<br> USD 19</p>
+  <img src="19.png" class="w-[40px] sm:w-[60px] md:w-[80px] h-[40px] sm:h-[60px] md:h-[60px] mt-3 md:mt-4 object-contain">
+  </div>
+ </div>
+</div>
+
+</div>
+</div>
+
+<!--- Consumer electronic section end --->
+
+
+</main>
+
+<!--- main section end --->
+ 
+ 
+ 
+
+
+</body>
+</html>
